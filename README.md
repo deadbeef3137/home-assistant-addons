@@ -17,7 +17,6 @@ https://github.com/deadbeef3137/home-assistant-addons/
 - [dahuavto2mqtt](https://github.com/deadbeef3137/home-assistant-addons/tree/main/dahuavto2mqtt) Listen events from Dahua VTO unit and publishes them via MQTT Message
 
 NVR with realtime local object detection for IP cameras
-
 - [Frigate](frigate/README.md)
 - [Frigate (Full Access)](frigate_fa/README.md)
 - [Frigate Proxy](frigate_proxy/README.md)
