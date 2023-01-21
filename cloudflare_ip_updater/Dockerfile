@@ -14,6 +14,6 @@ RUN chmod a+x /cloudflare.sh
 #Create s6-services
 RUN echo "#!/bin/bash" > s6-services \
     && echo "exec /cloudflare.sh" >> s6-services
-RUN ln -s /s6-services /etc/services.d/cloudflare
+RUN ln -s /s6-services /rootfs/etc/services.d/cloudflare
 
-CMD ["s6-svscan", "/etc/services.d"]
+CMD ["s6-svscan", "/rootfs/etc/services.d"]
