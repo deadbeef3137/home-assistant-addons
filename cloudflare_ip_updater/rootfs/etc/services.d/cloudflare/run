@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec /cloudflare.sh  >> /var/log/cloudflare.log 2>&1
