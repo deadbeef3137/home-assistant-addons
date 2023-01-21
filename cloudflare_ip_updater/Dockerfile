@@ -15,4 +15,8 @@ RUN chmod a+x /rootfs/cloudflare.sh
 RUN echo "#!/bin/bash" > /rootfs/s6-services \
     && echo "exec /rootfs/cloudflare.sh" >> /rootfs/s6-services
 
-CMD ["/usr/bin/s6-svscan", "/rootfs/etc/services.d"]
+ENV TINI_VERSION v0.18.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /tini
+RUN chmod +x /tini
+
+ENTRYPOINT ["/tini", "--", "/usr/bin/s6-svscan", "/rootfs/etc/services.d"]
