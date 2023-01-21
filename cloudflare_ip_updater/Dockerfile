@@ -15,4 +15,4 @@ RUN chmod a+x /rootfs/cloudflare.sh
 RUN echo "#!/bin/bash" > /rootfs/s6-services \
     && echo "exec /rootfs/cloudflare.sh" >> /rootfs/s6-services
 
-CMD ["/rootfs/etc/services.d"]
+CMD ["/usr/bin/s6-svscan", "/rootfs/etc/services.d"]
