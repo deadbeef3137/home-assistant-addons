@@ -7,13 +7,12 @@ ENV LANG C.UTF-8
 
 # Install requirements for add-on
 RUN apk add --update bash jq curl s6-overlay && rm -rf /var/cache/apk/*
-    
-COPY cloudflare.sh /
-RUN chmod a+x /cloudflare.sh
+
+COPY cloudflare.sh /rootfs/
+RUN chmod a+x /rootfs/cloudflare.sh
 
 #Create s6-services
-RUN echo "#!/bin/bash" > s6-services \
-    && echo "exec /cloudflare.sh" >> s6-services
-RUN ln -s /s6-services /rootfs/etc/services.d/cloudflare
+RUN echo "#!/bin/bash" > /rootfs/s6-services \
+    && echo "exec /rootfs/cloudflare.sh" >> /rootfs/s6-services
 
-CMD ["s6-svscan", "/rootfs/etc/services.d"]
+CMD ["/usr/bin/s6-svscan", "/rootfs/etc/services.d"]
