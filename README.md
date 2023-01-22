@@ -12,7 +12,7 @@ https://github.com/deadbeef3137/home-assistant-addons/
 
 ## Provided add-ons
 
-- [hassio-cloudflareipupdater](https://github.com/deadbeef3137/home-assistant-addons/tree/main/hassio_cloudflareipupdater) Dynamic IP Updater for Cloudflare in Home Assistant
+- [Cloudflare IP Updater](https://github.com/deadbeef3137/home-assistant-addons/tree/main/hassio_cloudflareipupdater) Dynamic IP Updater for Cloudflare in Home Assistant
 - [hassio-hotspot](https://github.com/deadbeef3137/home-assistant-addons/tree/main/hassio-hotspot) Home Assistant addon to let you create a WiFi access point
 - [dahuavto2mqtt](https://github.com/deadbeef3137/home-assistant-addons/tree/main/dahuavto2mqtt) Listen events from Dahua VTO unit and publishes them via MQTT Message
 
