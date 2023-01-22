@@ -1,7 +1,7 @@
 {
   "name": "Cloudflare IP Updater",
   "version": "2.0.0",
-  "slug": "hassio_cloudflareipupdater",
+  "slug": "Cloudflare IP Updater",
   "description": "Dynamic IP Updater for Cloudflare in Home Assistant",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "url": "https://github.com/deadbeef3137/home-assistant-addons/tree/main/cloudflare_ip_updater",
