@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Cloudflare service stopping" >> /var/log/cloudflare.log
-
-# Add any additional cleanup commands here
-
-exit 0
