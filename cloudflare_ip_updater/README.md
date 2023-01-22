@@ -1,4 +1,4 @@
-# hassio-cloudflareipupdater
+# Cloudflare IP Updater
 Dynamic IP Updater for Cloudflare in Home Assistant
 
 [![Community Forum][forum-shield]][forum]
