@@ -21,8 +21,6 @@ RUN mkdir -p /rootfs/etc/services.d/cloudflare
 RUN echo "#!/bin/bash" > /rootfs/etc/services.d/cloudflare/run \
     && echo "exec /rootfs/cloudflare.sh" >> /rootfs/etc/services.d/cloudflare/run
 
-COPY run /rootfs/etc/services.d/cloudflare/
-
 RUN chmod +x /rootfs/etc/services.d/cloudflare/run
 
 # Add Tini to handle signals and reap zombies
