@@ -1,4 +1,4 @@
-# Home Assistant Access Point
+# Home Assistant Access Point (HAOS AP)
 Use your hass.io host as a WiFi access point - perfect for off-grid and security focused installations.
 
 
