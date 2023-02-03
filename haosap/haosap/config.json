@@ -1,5 +1,5 @@
 {
-  "name": "Home Assistant Access Point",
+  "name": "Home Assistant Access Point (HAOS AP)",
   "version": "2.0.0",
   "slug": "haosap",
   "description": "Create a WiFi access point to directly connect devices to Home Assistant",
