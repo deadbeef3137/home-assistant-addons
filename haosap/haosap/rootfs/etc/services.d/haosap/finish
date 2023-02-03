@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "Home Assistant AP service stopping" >> /var/log/haosap.log
+
+# Add any additional cleanup commands here
+
+exit 0

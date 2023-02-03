@@ -1,0 +1,3 @@
+#!/bin/bash
+
+exec /haosap.sh  >> /var/log/haosap.log 2>&1
