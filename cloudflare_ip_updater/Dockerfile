@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-LABEL maintainer = "Jaime Quiroga <tecnico@neodomo.es>"
+LABEL maintainer = "Jaime Quiroga"
 
 ENV LANG C.UTF-8
 
