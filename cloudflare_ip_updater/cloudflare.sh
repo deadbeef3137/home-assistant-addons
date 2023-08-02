@@ -1,5 +1,3 @@
-#!/bin/bash
-
 CONFIG_PATH=/data/options.json
 
 ZONE=$(jq --raw-output ".zone" $CONFIG_PATH)
