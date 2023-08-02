@@ -1,7 +1,7 @@
 ARG BUILD_FROM
 FROM $BUILD_FROM
 
-LABEL maintainer = "Jaime Quiroga <tecnico@neodomo.es>"
+LABEL maintainer = "Jaime Quiroga"
 
 ENV LANG C.UTF-8
 
@@ -24,7 +24,9 @@ RUN echo "#!/bin/bash" > /rootfs/etc/services.d/cloudflare/run \
 RUN chmod +x /rootfs/etc/services.d/cloudflare/run
 
 # Add Tini to handle signals and reap zombies
-RUN echo "uname -m" > /tini && chmod +x /tini
+ENV TINI_VERSION v0.19.0
+ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini-static-armhf /tini
+RUN chmod +x /tini
 
 # Run s6-svscan with Tini
 ENTRYPOINT ["/tini", "-s", "--", "/usr/bin/s6-svscan", "/rootfs/etc/services.d"]
